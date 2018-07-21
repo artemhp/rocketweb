@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+}
+body {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+}
+.header {
+  background-color: #bbb;
+  height: 100px;
+}
+.sidebar {
+  background-color: #ddd;
+  width: 190px;
+}
+.content {
+  background-color: #ccc;
+}
+.image {
+  background-color: #eee;
+  height: 100px;
+}
+.footer {
+  background-color: #aaa;
+  height: 100px;
+}
+.wrapper {
+  width: 100%;
+}
