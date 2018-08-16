@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout with Inline-Block</title>
+  <link rel="stylesheet" href="general.css">
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: 190px auto 190px;
+      grid-template-rows: 100px auto 100px;
+      grid-template-areas: "header header header" "sidebar1 inner sidebar2" "footer footer footer";
+    }
+
+    .image-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 15px;
+    }
+
+    .header {
+      grid-area: header;
+      /* grid-column: 1/4;
+      grid-row: 1; */
+    }
+
+    .sidebar1 {
+      grid-area: sidebar1;
+      /* grid-column: 1;
+      grid-row: 2; */
+    }
+
+    .sidebar2 {
+      grid-area: sidebar2;
+      /* grid-column: 3;
+      grid-row: 2; */
+    }
+
+    .inner {
+      grid-area: inner;
+      /* grid-column: 2;
+      grid-row: 2; */
+    }
+
+    .footer {
+      grid-area: footer;
+      /* grid-column: 1/4;
+      grid-row: 3; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">Header</div>
+  <div class="sidebar sidebar1">Sidebar</div>
+  <div class="inner">
+    <div class="content"> Voluptates recusandae adipisci earum animi iusto neque eum officiis nemo distinctio reiciendis quia, molestias illum
+      non eligendi voluptate officia, velit, assumenda dicta fuga libero impedit hic deserunt dolorem? Vel, amet. Ex aliquam
+      quidem veritatis, amet tenetur perspiciatis inventore unde numquam expedita, minima maxime saepe hic aliquid. Nulla
+      blanditiis fuga architecto voluptate aliquam veniam odio quia numquam. Veniam aperiam aspernatur possimus. Adipisci
+      eius aliquid quisquam nisi odio a corporis provident, quo veritatis labore aspernatur ea natus doloribus nemo quod
+      explicabo, aperiam ratione temporibus eligendi unde facilis sapiente amet. Aliquam, debitis aperiam! Accusamus voluptatibus
+      laudantium officia a nobis at impedit nesciunt velit, ducimus veritatis consequatur ad, rem nemo ex perspiciatis aperiam
+      aliquam laboriosam repudiandae? Cumque in libero necessitatibus, molestias facere nobis porro? Officiis pariatur ea
+      reiciendis ad adipisci eligendi minima tempore, vitae iste, placeat rem quibusdam illum odit. Vero nostrum harum voluptates
+      delectus accusantium, ab maxime qui praesentium ducimus, minus laudantium sunt? Animi debitis veritatis mollitia dolor
+      laudantium, iste optio, quo consectetur delectus iure tempora, sint odit quasi voluptas nostrum omnis autem quis aliquam.
+      Excepturi eum nam, quibusdam maxime nemo eos consequuntur! Debitis perspiciatis earum non odit. Blanditiis neque eos
+      minus reiciendis perspiciatis. Soluta sint alias eaque error hic eius perferendis commodi illo officia nesciunt mollitia
+      molestiae, aliquid cumque neque dignissimos consectetur? Voluptates recusandae adipisci earum animi iusto neque eum
+      officiis nemo distinctio reiciendis quia, molestias illum non eligendi voluptate officia, velit, assumenda dicta fuga
+      libero impedit hic deserunt dolorem? Vel, amet. Ex aliquam quidem veritatis, amet tenetur perspiciatis inventore unde
+      numquam expedita, minima maxime saepe hic aliquid. Nulla blanditiis fuga architecto voluptate aliquam veniam odio quia
+      numquam. Veniam aperiam aspernatur possimus. Adipisci eius aliquid quisquam nisi odio a corporis provident, quo veritatis
+      labore aspernatur ea natus doloribus nemo quod explicabo, aperiam ratione temporibus eligendi unde facilis sapiente
+      amet. Aliquam, debitis aperiam! Accusamus voluptatibus laudantium officia a nobis at impedit nesciunt velit, ducimus
+      veritatis consequatur ad, rem nemo ex perspiciatis aperiam aliquam laboriosam repudiandae? Cumque in libero necessitatibus,
+      molestias facere nobis porro? Officiis pariatur ea reiciendis ad adipisci eligendi minima tempore, vitae iste, placeat
+      rem quibusdam illum odit. Vero nostrum harum voluptates delectus accusantium, ab maxime qui praesentium ducimus, minus
+      laudantium sunt? Animi debitis veritatis mollitia dolor laudantium, iste optio, quo consectetur delectus iure tempora,
+      sint odit quasi voluptas nostrum omnis autem quis aliquam. Excepturi eum nam, quibusdam maxime nemo eos consequuntur!
+      Debitis perspiciatis earum non odit. Blanditiis neque eos minus reiciendis perspiciatis. Soluta sint alias eaque error
+      hic eius perferendis commodi illo officia nesciunt mollitia molestiae, aliquid cumque neque dignissimos consectetur?
+      </div>
+    <div class="image-wrapper">
+      <div>
+        <div class="image">1</div>
+      </div>
+      <div>
+        <div class="image">2</div>
+      </div>
+      <div>
+        <div class="image">3</div>
+      </div>
+      <div>
+        <div class="image">4</div>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar sidebar2">Sidebar</div>
+  <div class="footer">Footer</div>
+</body>
+
+</html>
